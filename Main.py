@@ -1,12 +1,13 @@
 import os
 
 class Stack:
-    def _init_(self, size):
+    def __init__(self, size):
         self.item = []
         self.size = size
         
 
     def is_empty(self):
+        # Write code here
         if len(self.item)==0 :
             return True
 
@@ -28,6 +29,7 @@ class Stack:
             for i in self.item:
                 print(i)
 
+# Do not change the following code
 size, queries = map(int, input().rstrip().split())
 stack = Stack(size)
 for line in range(queries):
